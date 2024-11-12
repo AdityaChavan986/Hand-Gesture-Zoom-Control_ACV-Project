@@ -8,7 +8,7 @@ import numpy as np
 st.set_page_config(page_title=" Zoom GestureControl", layout="wide")
 
 # Title of the Streamlit app
-st.title("Hand Gesture Zoom Control ")
+st.title("Hand Gesture Zoom Control ") 
 
 # Sidebar for control settings
 st.sidebar.header("Settings")

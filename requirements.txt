@@ -1,7 +1,7 @@
 streamlit
 Pillow
 numpy
-opencv-python-headless==4.10.0.84
+opencv-python-headless==4.5.1.48
 cvzone
 mediapipe
 PyOpenGL==3.1.6

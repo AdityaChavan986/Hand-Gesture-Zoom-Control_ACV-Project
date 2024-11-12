@@ -5,10 +5,10 @@ from PIL import Image
 import numpy as np
 
 # Set up Streamlit page configuration
-st.set_page_config(page_title=" Zoom Gesture Control", layout="wide")
+st.set_page_config(page_title=" Zoom GestureControl", layout="wide")
 
 # Title of the Streamlit app
-st.title("Hand Gesture Zoom Control")
+st.title("Hand Gesture Zoom Control Interface")
 
 # Sidebar for control settings
 st.sidebar.header("Settings")

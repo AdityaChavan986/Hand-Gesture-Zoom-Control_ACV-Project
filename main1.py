@@ -32,7 +32,7 @@ elif stop_video:
 
 # Define the main function for hand gesture control
 def run_hand_tracking(overlay_image):
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     cap.set(3, 1280)  # Width
     cap.set(4, 720)   # Height
 

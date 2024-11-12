@@ -5,10 +5,10 @@ from PIL import Image
 import numpy as np
 
 # Set up Streamlit page configuration
-st.set_page_config(page_title=" Zoom GestureControl", layout="wide")
+st.set_page_config(page_title="Zoom GestureControl", layout="wide")
 
 # Title of the Streamlit app
-st.title("Hand Gesture Zoom Control ")
+st.title("Hand Gesture Zoom Control")
 
 # Sidebar for control settings
 st.sidebar.header("Settings")
@@ -32,7 +32,11 @@ elif stop_video:
 
 # Define the main function for hand gesture control
 def run_hand_tracking(overlay_image):
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0)  # Try 0 for the default camera
+    if not cap.isOpened():
+        st.warning("Error: Could not access the camera.")
+        return
+
     cap.set(3, 1280)  # Width
     cap.set(4, 720)   # Height
 

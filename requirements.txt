@@ -3,5 +3,5 @@ Pillow
 numpy
 opencv-python-headless==4.10.0.84
 cvzone
-mediapipe
+mediapipe==0.10.0
 PyOpenGL==3.1.6
